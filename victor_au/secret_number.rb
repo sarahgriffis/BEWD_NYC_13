@@ -12,7 +12,8 @@ puts "\n"
 puts "The rules of this game are as follows. You must guess an integer between 1 and 10, and you only have three tries to do so."
 puts "\n"
 
-secret_number = 4
+secret_number = rand(10) + 1
+#I googled around and figured that I'd use Ruby's pseudo-random number generator instead of a static number.
 
 puts "#{player_name.capitalize}, what's your first guess?"
 
