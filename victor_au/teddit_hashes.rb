@@ -53,7 +53,7 @@ submissions = {}
   # Lastly, let's add our new hash to the posts array that you created above
   # this loop.
 
-  posts = [submissions]
+  posts << submissions
 
   # Finally, we'll display the story to the end user before asking them if they
   # would like to add another
