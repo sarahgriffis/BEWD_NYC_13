@@ -68,7 +68,7 @@ posts = []
 #   'data' key first, and then the 'children' key in order to get an array of
 #   all the posts.
 #
-parsed_response['data']['children'].each do |post_data|
+posts = parsed_response['data']['children'].map do |post_data|
 
  # Once inside the loop, let's stick a `binding.pry` in here so that we can
   # experiment with what sort of data is in each post. Run the file with the
@@ -77,33 +77,37 @@ parsed_response['data']['children'].each do |post_data|
   # Let's create three variables:
   # 1. title, which will access the 'title' attribute from the hash (you may
   # need to dig down into an attribute before you see the 'title' key.
-  title = post_data['data']['title']
+  #title = post_data['data']['title']
 
   # 2. category, which will access the 'subreddit' attribute from the hash,
   # again, you may need to dig down into an attribute first before you see that
   # key of the hash
-  category = post_data['data']['subreddit']
+  #category = post_data['data']['subreddit']
 
 
   # 3. Lastly, upvotes - which you will manually have to calculate using the
   # `calculate_upvotes` method at the top of this program. Remember that this
   # method takes two parameters, the title and the category. Execute the method
   # and store it's result in a variable titled upvotes.
-  upvotes = calculate_upvotes(title, category)
+  #upvotes = calculate_upvotes(title, category)
 
   # This line create a new hash with three keys: :title, :category, and
   # :upvotes, and store it in a variable called posts. Remember, we're setting
   # the keys equal to the variables that you defined above (`title`, `category`
   # and `upvotes`), so those will need to be defined in order for this line to
   # work
-  post = { title: title, category: category, upvotes: upvotes }
+  #post =
+    { title: post_data['data']['title'],
+           category: post_data['data']['subreddit'],
+           upvotes: calculate_upvotes(post_data['data']['title'], post_data['data']['subreddit']) }
 
   # Lastly, this line will add the new hash into the empty `posts` array that
   # you defined above
-  posts << post
+  #posts << post
 
 # Be sure to end your loop here.
 end
+
 # Let's check our work, this line will iterate over each of the posts that you
 # extracted the `title`, `category`, and `upvotes` for and display it out to
 # the screen.
