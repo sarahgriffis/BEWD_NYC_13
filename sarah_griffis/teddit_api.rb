@@ -97,9 +97,9 @@ posts = parsed_response['data']['children'].map do |post_data|
   # and `upvotes`), so those will need to be defined in order for this line to
   # work
   #post =
-    { title: post_data['data']['title'],
-           category: post_data['data']['subreddit'],
-           upvotes: calculate_upvotes(post_data['data']['title'], post_data['data']['subreddit']) }
+  { title: post_data['data']['title'],
+    category: post_data['data']['subreddit'],
+    upvotes: calculate_upvotes(post_data['data']['title'], post_data['data']['subreddit']) }
 
   # Lastly, this line will add the new hash into the empty `posts` array that
   # you defined above
