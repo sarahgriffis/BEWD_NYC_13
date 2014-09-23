@@ -62,7 +62,7 @@ blog_posts = [
 #tags = tags.uniq
 
 #using map
-tags = blog_posts.map { |post| post[:tags] }.flatten!.uniq!
+tags = blog_posts.map { |post| post[:tags] }.flatten.uniq
 
 
 
