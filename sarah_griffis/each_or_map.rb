@@ -62,7 +62,19 @@ blog_posts = [
 #tags = tags.uniq
 
 #using map
-tags = blog_posts.map { |post| post[:tags] }.flatten.uniq
+#tags = blog_posts.map { |post| post[:tags] }.flatten.uniq
+
+#using set
+require 'set'
+tags = Set.new []
+blog_posts.each do |post|
+  post[:tags].each do |tag|
+    tags << tag
+  end
+end
+
+tags = tags.to_a
+
 
 
 
