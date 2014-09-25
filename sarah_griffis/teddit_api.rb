@@ -23,6 +23,8 @@ def calculate_upvotes(story, category)
   upvotes *= 5 if story.downcase.include? 'cats' or category.downcase.include? 'cats'
   upvotes *= 8 if story.downcase.include? 'bacon' or category.downcase.include? 'bacon'
   upvotes *= 3 if story.downcase.include? 'food' or category.downcase.include? 'food'
+  upvotes *= 10 if story.downcase.include? 'awesome' or category.downcase.include? 'awesome'
+  upvotes *= 12 if story.downcase.include? 'belly' or category.downcase.include? 'belly'
 
   upvotes
 end
@@ -51,7 +53,7 @@ parsed_response = JSON.parse(response)
 
 # Once you've reached this point, feel free to put a `binding.pry` in your code
 # so that you can inspect if you have any errors.
-
+#binding.pry
 
 # Next, create an empty array called `posts`.
 posts = []
@@ -108,10 +110,21 @@ posts = parsed_response['data']['children'].map do |post_data|
 # Be sure to end your loop here.
 end
 
+#binding.pry
+
 # Let's check our work, this line will iterate over each of the posts that you
 # extracted the `title`, `category`, and `upvotes` for and display it out to
 # the screen.
-posts.each do |post|
+puts "Would you like the posts by title (alphabetically) or by descending upvotes?"
+puts "Please type 'title' or 'upvotes'"
+sort_type = gets.strip
+
+posts_sorted = posts.sort_by{ |hsh| hsh[:title].downcase} if sort_type == 'title'
+
+posts_sorted = posts.sort_by{ |hsh| -hsh[:upvotes]} if sort_type == 'upvotes'
+
+
+posts_sorted.each do |post|
   puts "Title: #{post[:title]}"
   puts "Category: #{post[:category].capitalize}"
   puts "Current Upvotes: #{post[:upvotes]}"
