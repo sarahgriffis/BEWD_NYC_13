@@ -12,7 +12,7 @@
 # terminal. You will get an error. Find the line that the error occurred on and
 # debug your way through populating the contents of the three classes in lib/.
 # There is no need to edit anything in this file.
-
+require 'pry'
 require_relative 'lib/building'
 require_relative 'lib/apartment'
 require_relative 'lib/person'
