@@ -1,0 +1,97 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+ .nav a {
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 25px 10px;
+  text-transform: uppercase;
+}
+
+.nav ul {
+  margin-bottom: 0px;
+}
+
+
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+  //background-image:url('http://bizkonects.com/wp-content/uploads/2014/05/Networking2.jpg');
+  background-image: image-url('2014_10_19-Maison_Premiere_0443.jpg');
+  height: 750px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  //margin-right: 50px;
+  //margin-left: 50px;
+  margin-bottom: 0px;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:10px;
+}
+
+.jumbotron h1 {
+
+  font-size: 70px;
+  font-family: 'Verdana', sans-serif;
+  font-weight: bold;
+  color: beige;
+  text-align: center;
+  margin-top: 0px;
+
+}
+
+.jumbotron p {
+  font-size: 20px;
+  font-style: italic;
+  color: rgb(229, 222, 222);
+  text-align: center;
+  padding-top: 9px;
+}
+
+.jumbotron a {
+  font-size: 20px;
+  color: rgb(229, 222, 222);
+  text-align: center;
+  display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+  font-weight: normal;
+}
+
+.learn-more {
+  background-color: gray;
+}
+
+.learn-more h3 {
+  font-family: 'Verdana', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #00b0ff;
+  /*color: red;*/
+}
+
+.experience-guides{
+    background-color:   #efefef;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.experience-guides h2{
+    color: #393c3d;
+    font-size: 24px;
+}
+
+.experience-guides p{
+    font-size: 15px;
+    margin-bottom: 13px;
+}
