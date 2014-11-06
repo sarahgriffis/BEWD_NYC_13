@@ -1,0 +1,7 @@
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 2868ms
