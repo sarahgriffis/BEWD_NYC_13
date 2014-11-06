@@ -43,7 +43,7 @@ gem 'autoprefixer-rails'
 gem 'omniauth-linkedin-oauth2'
 gem 'devise'
 gem 'flat-ui-rails'
-gem 'simple_form'
+gem 'simple_form', '~> 3.1.0rc1'
 
 gem 'geocoder'
 gem 'rest-client'
@@ -52,7 +52,6 @@ gem 'json'
 gem 'foursquare2', '~> 2.0.1'
 gem 'bootstrap-datepicker-rails'
 gem 'haml'
-gem 'rails_12factor'
 
 
 group :production do
