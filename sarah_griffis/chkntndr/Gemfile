@@ -52,6 +52,8 @@ gem 'json'
 gem 'foursquare2', '~> 2.0.1'
 gem 'bootstrap-datepicker-rails'
 gem 'haml'
+gem 'rails_12factor'
+
 
 group :production do
   gem 'pg'

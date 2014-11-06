@@ -64885,3 +64885,192 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 17:58:47
 
 
 Started GET "/assets/2014_10_19-Maison_Premiere_0443.jpg" for 127.0.0.1 at 2014-11-06 17:58:47 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 18:07:23 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered welcome/index.html.haml within layouts/application (20.5ms)
+Completed 200 OK in 218ms (Views: 210.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/contact.css?body=1" for 127.0.0.1 at 2014-11-06 18:07:23 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-06 18:07:23 -0500
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-11-06 18:07:23 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-06 18:07:23 -0500
+
+
+Started GET "/assets/login.css?body=1" for 127.0.0.1 at 2014-11-06 18:07:23 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:07:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:23 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:23 -0500
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:23 -0500
+
+
+Started GET "/assets/login.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:23 -0500
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:23 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:23 -0500
+
+
+Started GET "/assets/2014_10_19-Maison_Premiere_0443.jpg" for 127.0.0.1 at 2014-11-06 18:07:24 -0500
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-11-06 18:07:25 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mfp5I851bjJGGuyPC8ktg+S14jFDLc3c97gV9Ba2hF4="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 18:07:25 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 125ms (Views: 123.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/contact.css?body=1" for 127.0.0.1 at 2014-11-06 18:07:25 -0500
+
+
+Started GET "/assets/login.css?body=1" for 127.0.0.1 at 2014-11-06 18:07:25 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-06 18:07:25 -0500
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-11-06 18:07:25 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-06 18:07:25 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:07:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:25 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:25 -0500
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:25 -0500
+
+
+Started GET "/assets/login.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:25 -0500
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:25 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:25 -0500
+
+
+Started GET "/assets/2014_10_19-Maison_Premiere_0443.jpg" for 127.0.0.1 at 2014-11-06 18:07:26 -0500
+
+
+Started GET "/users/auth/linkedin" for 127.0.0.1 at 2014-11-06 18:07:27 -0500
+
+
+Started GET "/users/auth/linkedin" for 127.0.0.1 at 2014-11-06 18:07:28 -0500
+
+
+Started GET "/users/auth/linkedin/callback?code=AQRisGV57UwPTMig-XSci28GK_OkEPs5YzWdaVUJgUI1_4d-h-eVk1WI1yxyn1sGnFqk6hIuDySgk7VVKviZ9jWzp_ifpgpFTvfu-myLXAu-kRmck6U&state=b55e8ae3318074882e5d281d5147ea392a0fb3629320941b" for 127.0.0.1 at 2014-11-06 18:07:29 -0500
+Processing by OmniauthCallbacksController#linkedin as HTML
+  Parameters: {"code"=>"AQRisGV57UwPTMig-XSci28GK_OkEPs5YzWdaVUJgUI1_4d-h-eVk1WI1yxyn1sGnFqk6hIuDySgk7VVKviZ9jWzp_ifpgpFTvfu-myLXAu-kRmck6U", "state"=>"b55e8ae3318074882e5d281d5147ea392a0fb3629320941b"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'sgriff211@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", "2014-11-06 23:07:30.398667"], ["last_sign_in_at", "2014-11-06 22:02:58.206047"], ["sign_in_count", 36], ["updated_at", "2014-11-06 23:07:30.399469"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/reservations/new
+Completed 302 Found in 7ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/reservations/new" for 127.0.0.1 at 2014-11-06 18:07:30 -0500
+Processing by ReservationsController#new as HTML
+  Rendered reservations/new.html.erb within layouts/application (43.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 196ms (Views: 191.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/contact.css?body=1" for 127.0.0.1 at 2014-11-06 18:07:30 -0500
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-11-06 18:07:30 -0500
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-06 18:07:30 -0500
+
+
+Started GET "/assets/login.css?body=1" for 127.0.0.1 at 2014-11-06 18:07:30 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-06 18:07:30 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 18:07:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:30 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:30 -0500
+
+
+Started GET "/assets/contact.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:30 -0500
+
+
+Started GET "/assets/login.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:30 -0500
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:30 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-06 18:07:30 -0500
