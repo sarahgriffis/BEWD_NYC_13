@@ -1,9 +1,17 @@
 Rails.application.routes.draw do
+  #get 'reservations/new'
+  #get 'reservations/index'
+  #get 'reservations/show'
+
+  resources :reservations, :except => 'show'
+
+  devise_for :users, controllers: {omniauth_callbacks: :omniauth_callbacks}
   get 'contact/show', as: :contact
 
   get 'login/show', as: :login
 
-  get 'welcome/index'
+  get 'reservations/find_restaurants' => 'reservations#find_restaurants', as: :find_restaurants
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

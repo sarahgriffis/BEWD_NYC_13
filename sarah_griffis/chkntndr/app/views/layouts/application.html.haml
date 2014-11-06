@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+%html
+  %head
+    %title Chkntndr
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+
+  %body
+    - if notice
+      %p.alert
+        = notice
+
+    - if alert
+      %p.alert
+        = alert
+
+    .nav
+      .container
+        %ul.pull-left
+
+        %ul.pull-right
+          - if current_user
+            %li You are currently signed in as #{current_user.full_name}.
+            %li
+              %a= link_to 'Sign Out', destroy_user_session_path, method: :delete
+          - else
+            %li
+              %a= link_to 'Sign Up with LinkedIn', user_omniauth_authorize_path(:linkedin)
+
+          %li
+            %a= link_to 'Contact', '#'
+          %li
+            %a= link_to 'About', '#'
+          %li
+            %a= link_to 'Login', '#myModal', "data-toggle" => "modal"
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h4 class="modal-title">Modal title</h4>
+    </div>
+    <div class="modal-body">
+    Content
+    </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+    </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    = yield

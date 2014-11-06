@@ -1,0 +1,30 @@
+<div class='col-sm-4 col-sm-offset-4'>
+
+<h1>Create a Reservation</h1>
+
+<p> Step 1: Choose a city you'd like to eat in</p>
+<p> (Are you taking any business trips soon? Or would you like to host a traveller for dinner in your homecity?)</p>
+
+<%= simple_form_for @reservation,   :defaults => { :wrapper_html => {:class => 'form-group'}, :input_html => { :class => 'form-control' } } do |f| %>
+  <%= f.input :city, placeholder: 'Enter city', required: true%>
+  <br>
+  <br>
+  <p> Optional Steps </p>
+  <p> Step 2: Search for a cuisine.</p>
+  <%= f.input :cuisine, placeholder: 'Enter cuisine'  %>
+  <br>
+  <p> Step 3: Do you prefer an alcoholic drink with dinner?</p>
+  <%= f.input :prefer_drinks, as: :select, :collection => [[false],[true]]%>
+  <br>
+  <p> Step 4: When would you like to eat?</p>
+  <%= f.input :perferred_date, as: :date%>
+  <br>
+  <p> Step 5: What time would you like to eat?</p>
+  <%= f.input :preferred_reservation_time, as: :time,  minute_step: 30, :ampm => true%>
+  <br>
+  <br>
+
+
+  <%= f.button :submit, :class => "btn primary" %>
+<% end %>
+</div>

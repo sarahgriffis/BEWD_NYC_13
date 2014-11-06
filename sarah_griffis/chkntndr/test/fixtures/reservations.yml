@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fav_restaurant1: MyString
+  fav_restaurant2: MyString
+  fav_restaurant3: MyString
+  cuisine: MyString
+  prefer_drinks: MyString
+  preferred_reservation_time: 2014-10-31 16:32:46
+  perferred_date: 2014-10-31
+
+two:
+  fav_restaurant1: MyString
+  fav_restaurant2: MyString
+  fav_restaurant3: MyString
+  cuisine: MyString
+  prefer_drinks: MyString
+  preferred_reservation_time: 2014-10-31 16:32:46
+  perferred_date: 2014-10-31

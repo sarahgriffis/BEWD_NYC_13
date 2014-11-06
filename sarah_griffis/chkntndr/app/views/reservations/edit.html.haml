@@ -1,0 +1,12 @@
+%h1 Choose Your Restaurants
+- @restaurants.in_groups_of(4, false).each do |group|
+  - group.each do |r|
+    .col-md-3.col-sm-6
+      %h2= r.name
+      %p= "Price tier: " + r.price_tier.to_s + " of 5."
+      %p= "Rating: " + r.rating.to_s + " from " + r.num_ratings.to_s + " rating".pluralize
+      .thumbnail
+        = image_tag r.photo_url
+      %p= r.formatted_address[0]
+      %p= r.formatted_phone
+      %br

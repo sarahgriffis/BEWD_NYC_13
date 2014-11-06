@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+%body
+.jumbotron
+  .container
+    .page-header
+      %h1 CHKNTNDR
+      %br
+      %p Expand your professional network dining at the <br> world's best establishments.
+    - if current_user
+    - else
+      .centered
+        %button.btn.btn-medium
+          %a= link_to 'Sign up via email', new_user_registration_path
+        %button.btn.btn-medium
+          %a= link_to 'Sign up via LinkedIn', user_omniauth_authorize_path(:linkedin)
+
+.learn-more
+  .container
+    .row
+      .col-md-6
+        %h3 Travel Savvy
+        %p We know networking can be tough.  Expand your professional network organically with CHKNTNDR.  We'll help you find colleagues in your industry in the cities you're already travelling to.
+      .col-md-6
+        %h3 Explore New Restaurants
+        %p CHKNTNDR picks a curated selection of top restaurants for your dining enjoyment and finds your industry colleagues interested in the same restaurants.  Never eat a meal in your hotel room alone with CHKNTNDR's help.
+
+
